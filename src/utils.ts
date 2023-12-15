@@ -24,7 +24,7 @@ export function renderTagsInSuggestion(app: App, item: { file: TFile }, el: HTML
         el.querySelector('.suggestion-content')!.appendChild(noteEl);
     }
 
-    tags.map(renderTag).forEach((tagEl) => {
+    tags.unique().map(renderTag).forEach((tagEl) => {
         noteEl!.appendChild(tagEl);
     });
 }
