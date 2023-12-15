@@ -1,9 +1,9 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "tag-ui",
+	"name": "Tag UI",
 	"version": "0.1.0",
 	"minAppVersion": "1.4.16",
-	"description": "",
+	"description": "Tag-inclined UI.",
 	"author": "Ryota Ushio",
 	"authorUrl": "https://github.com/RyotaUshio",
 	"fundingUrl": "https://www.buymeacoffee.com/ryotaushio",
