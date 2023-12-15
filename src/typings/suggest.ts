@@ -1,9 +1,8 @@
 import { EditorSuggest, Loc, PopoverSuggest, SearchMatches, SuggestModal, TFile } from "obsidian";
 
 export type BuiltInSuggestItem = FileLinkSuggestItem | AliasLinkSuggestItem | LinkTextSuggestItem | HeadingLinkSuggestItem | BlockLinkSuggestItem;
-export type BuiltInSuggest = EditorSuggest<BuiltInSuggestItem> & { manager: PopoverManager<BuiltInSuggestItem> };
+export type BuiltInSuggest = EditorSuggest<BuiltInSuggestItem>;
 export type Suggester<T> = PopoverSuggest<T> | SuggestModal<T>;
-export type PatchedSuggester<T> = Suggester<T> & { popoverManager: PopoverManager<T> };
 
 export interface PreviewInfo {
     linktext: string;
